@@ -22,6 +22,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -123,6 +124,7 @@ section.search-and-filters {
 
 .fa-magnifying-glass {
     color: white;
+    display: none;
 }
 
 /**** Filters ****/
@@ -388,8 +390,6 @@ footer {
     width: 100%;
 }
 
-
-
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -454,15 +454,6 @@ footer {
     }
 }
 
-/* échange recherche avec loupe */
-@media (min-width: 768px) {
-
-    .fa-magnifying-glass {
-        display: none;
-    }
-
-}
-
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
@@ -521,6 +512,10 @@ footer {
 
     .button-search-bar span {
         display: none;
+    }
+
+    .fa-magnifying-glass {
+        display: initial;
     }
 
     /**filter-bar*/
