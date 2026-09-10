@@ -156,6 +156,7 @@ section.search-and-filters {
     padding: 4px 19px;
     gap: 10px;
     align-items: center;
+    white-space: nowrap;
 }
 
 .filter-button:hover {
