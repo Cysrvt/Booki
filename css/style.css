@@ -27,6 +27,41 @@ body {
     box-sizing: border-box;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
+}
+
+/****************************/
+
 
 /****** Header *************/
 
@@ -67,6 +102,7 @@ section.search-and-filters {
 }
 
 /****search bar****/
+
 .search-title {
     font-size: 22px;
     margin-bottom: 8px;
@@ -184,40 +220,6 @@ section.search-and-filters {
     gap: 10px;
 }
 
-/****************************/
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.section-title {
-    margin: 0;
-    font-size: 22px;
-}
-
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-
-.card img {
-    object-fit: cover;
-}
-
-.card-title {
-    font-size: 16px;
-}
-
-.euro {
-    font-weight: 700;
-}
-
-.neutral-star {
-    color: var(--main-bg-color)
-}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -252,7 +254,6 @@ a {
 
 .hebergements-cards .card {
     height: 207.25px;
-    width: 100%;
     box-sizing: border-box;
 }
 
@@ -261,13 +262,13 @@ a {
     width: 100%;
 }
 
-.hebergements img {
+.hebergements-cards img {
     height: 60%;
     width: 100%;
     border-radius: 20px 20px 0 0;
 }
 
-.hebergements .card-content {
+.hebergements-cards .card-content {
     height: 40%;
     padding-left: 15px;
     display: flex;
@@ -391,6 +392,8 @@ footer .filter-title {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
+    /** filters-bar **/
+
     .filters-bar {
         flex-direction: column;
     }
@@ -398,6 +401,8 @@ footer .filter-title {
     .filter-button {
         height: 50px;
     }
+
+    /* Hebergements and populaires */
 
     .hebergements-and-populaires {
         flex-direction: column;
@@ -435,6 +440,8 @@ footer .filter-title {
         font-size: 13px;
     }
 
+    /* Activites */
+
     .activites-cards a {
         height: 270px;
     }
@@ -454,6 +461,8 @@ footer .filter-title {
     .main-container {
         padding: 0;
     }
+
+    /* header */
 
     .menu-header {
         flex-direction: column;
@@ -558,6 +567,8 @@ footer .filter-title {
         flex-direction: column;
         gap: 15px;
     }
+
+    /* Activites */
 
     .activites-cards {
         flex-direction: column;
