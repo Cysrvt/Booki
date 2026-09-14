@@ -258,8 +258,7 @@ section.search-and-filters {
 }
 
 .hebergements a {
-    height: 100%;
-    width: 100%;
+    flex: 1;
 }
 
 .hebergements-cards img {
